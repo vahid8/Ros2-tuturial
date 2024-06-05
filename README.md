@@ -56,5 +56,10 @@ ros2 run my_robot_controler test_node
 if you dont want to type "colcon build" each time you make changes to your code you can type "colcon build --symlink-install" once
 
 ## command list 
-ros2 node list //
-ros2 node info /first_node
+
+| Feature/Component      | Description    |
+|------------------------|----------------|
+| ros2 node list        | list of nodes |
+| ros2 node info <node name>       | get info |
+
+
