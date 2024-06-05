@@ -61,5 +61,16 @@ if you dont want to type "colcon build" each time you make changes to your code 
 |------------------------|----------------|
 | ros2 node list        | list of nodes |
 | ros2 node info <node name>       | get info |
+| ros2 topic list        | list of topics |
+| ros2 topic info <topic name>       | get info |
+| ros2 topic echo <topic name>       | see output of a publisher |
+| ros2 topic hz <topic name> | see frequency of publisher outputs |
+| ros2 interface show <Type> | see data structure of input or output for the topic aftergetting the topic info |
+| ros2 service list | list of services |
+| ros2 service type <service name> | type of service |
+| ros2 interface show <name from above> | show data |
+| rqt_qrt | show the gragh |
+| colcon build| build project |
+| create client. service, publisher, subsriber| different type of constructors |
 
 
