@@ -40,8 +40,8 @@ touch my_first_node.py
 chmod +x my_first_node.py
 ```
 #write your code inside my_first_node (check the example in this repo)
-# first send second line should be #!/usr/bin/env python3   & import rclpy
-# import Node class and inherit from that
+first send second line should be #!/usr/bin/env python3   & import rclpy
+import Node class and inherit from that
 
 run the code itself using ./myfirstnode
 To be able to run it on your ros2 run you need to add it to setup.py in section"entry_points" e.g
@@ -56,5 +56,5 @@ ros2 run my_robot_controler test_node
 if you dont want to type "colcon build" each time you make changes to your code you can type "colcon build --symlink-install" once
 
 ## command list 
-ros2 node list
+ros2 node list //
 ros2 node info /first_node
