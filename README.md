@@ -71,6 +71,9 @@ if you dont want to type "colcon build" each time you make changes to your code 
 | ros2 interface show <name from above> | show data |
 | rqt_qrt | show the gragh |
 | colcon build| build project |
+| colcon build --packages-up-to time_controler  | build a specific package only |
+| ros2 run time_controler nmea_subscriber |
+| ros2 launch fixposition_driver_ros2 tcp.launch |
 | create client. service, publisher, subsriber| different type of constructors |
 
 
