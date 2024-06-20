@@ -76,4 +76,19 @@ if you dont want to type "colcon build" each time you make changes to your code 
 | ros2 launch fixposition_driver_ros2 tcp.launch |
 | create client. service, publisher, subsriber| different type of constructors |
 
+## PTP
+use installation here://
+https://tsn.readthedocs.io/timesync.html#introduction//
+```
+1- check ethernets
+ip link show
+2- use ethtool to check if an eth send the ptp
+ethtool -T <name from list above>
+3- use this command
+sudo ptp4l -i eno1 -f configs/gPTP.cfg --step_threshold=1 -m
+4- get check_clocks.c and compile it (check if your pc clock is synchronized)
+gcc -o check_clocks check_clocks.c
+sudo ./check_clocks -d <name from list above>
+Clocks on this system are synchronized :)
+
 
